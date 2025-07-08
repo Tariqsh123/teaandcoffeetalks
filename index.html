@@ -13,26 +13,12 @@
     <title>Tea & Coffee Talks</title>
 
    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/Bootstrap.css">
 <link href="css/style.css" rel="stylesheet" />
-<link href="css/style-append.css" rel="stylesheet" />
-
-<!-- Preload Scripts -->
-<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" />
-<link rel="preload" as="script" href="https://pbcdn1.podbean.com/fs1/site/www-v2/js/gsap/gsap.bundle.min.js" />
-<link rel="preload" as="script" href="https://pbcdn1.podbean.com/fs1/site/www-v2/js/home-script.js?v=16" />
-<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" />
-<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" />
-<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" />
-<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" />
-
-<!-- Preload Fonts -->
-<link rel="preload" as="font" href="https://pbcdn1.podbean.com/fs1/site/css/iconfont2/iconfont.woff2?t=1730872170594" crossorigin="anonymous" />
-<link rel="preload" as="font" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/fonts/bootstrap-icons.woff2?30af91bf14e37666a085fb8a161ff36d" crossorigin="anonymous" />
-<link rel="preload" as="font" href="https://fonts.gstatic.com/s/inter/v18/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2" crossorigin="anonymous" />
-<link rel="preload" as="font" href="https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2" crossorigin="anonymous" />
 
   </head>
   <body>
+    
     <div class="wrap">
    <nav class="navbar fixed-top navbar-expand-lg navbar-light new-header header-bg-transparent">
   <div class="container-fluid" id="header-menu-load">
@@ -41,16 +27,18 @@
       <img src="images/logo.png" width="306" height="114" alt="Brand Logo" />
     </a>
     <!-- Hamburger Menu -->
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-      <i class="bi bi-list fs-2 text-white"></i>
-    </button>
+ <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+  <img src="https://img.icons8.com/ios-filled/50/ffffff/menu--v1.png" alt="Menu" width="30" height="30" style="height: 20px ; width:auto;" />
+</button>
+
+
     <!-- Nav Items -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-4 mb-lg-0">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> 
             <span>Broadcast Sessions</span>
-            <i class="bi bi-chevron-down d-lg-none"></i>
+            <img src="https://img.icons8.com/?size=100&id=HqE81NCGcYux&format=png&color=FFFFFF" style="height: 10px; width : auto;" alt="Down Arrow" class="d-lg-none" width="14" height="14" />
           </a>
           <!-- Dropdown Menu of Broadcast Session -->
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
@@ -150,7 +138,7 @@
         <li class="nav-item dropdown resources-dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
             <span>Guides</span>
-            <i class="bi bi-chevron-down d-lg-none"></i>
+           <img src="https://img.icons8.com/?size=100&id=HqE81NCGcYux&format=png&color=FFFFFF" style="height: 10px ;width :auto;" alt="Down Arrow" class="d-lg-none" width="14" height="14" />
           </a>
 
           <!-- Resource Drop Down -->
@@ -315,9 +303,9 @@
           <a class="nav-link login-link" href="">Sign In</a>
         </li>
         <li class="nav-item">
-<a class="nav-link active btn-green" href="" 
-style="background: linear-gradient(to right, #01575e, #02818d, #1694a0, #2c929a);
-border:2px solid white;">Join Now</a>
+          <a class="nav-link active btn-green" href="" 
+          style="background: linear-gradient(to right, #01575e, #02818d, #1694a0, #2c929a);
+          border:2px solid white;">Join Now</a>
 
         </li>
       </ul>
@@ -332,15 +320,18 @@ border:2px solid white;">Join Now</a>
       <div class="page">
         <div class="new-home-page position-relative overflow-hidden">
           <div class="home-banner position-relative">
-            <div class="container-fluid px-0 w-100 video-banner">
-              <div class="row">
-                <div class="col-12 video-item">
-                  <div class="web-video" id="banner-video-item">
-                    <video class="video-size object-fit-cover w-100" id="banner-video" autoplay loop muted playsinline></video>
-                  </div>
+          <div class="container-fluid px-0 w-100 video-banner">
+            <div class="row">
+              <div class="col-12 video-item">
+                <div class="web-video" id="banner-video-item">
+                  <video class="video-size object-fit-cover w-100" id="banner-video" autoplay loop muted playsinline>
+                    <source src="/videos/HeroSection-Bg-Video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
             </div>
+          </div>
 
             <div class="container position-absolute top-50 start-0 end-0 translate-middle-y">
               <div class="row">
@@ -372,10 +363,10 @@ border:2px solid white;">Join Now</a>
                     <p class="h-cc-text text-dark-gray pt-2 mt-1 lh-18">
                       Create engaging podcasts directly from your phone using Podbean’s recording app, or capture every moment with high-quality live streaming. Seamlessly publish both audio and video on a secure, all-in-one platform designed to help you grow your audience effortlessly.
                     </p>
-                    <a class="link text-212121" href="#">
-                      Start Now
-                      <i class="bi bi-arrow-right text-212121"></i>
+                    <a class="link text-212121" href="#">Start Now
+                      <img src="https://img.icons8.com/?size=100&id=355&format=png&color=000000" alt="Arrow Right" style="height: 20px; width: auto;" />
                     </a>
+
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-12 position-relative c-left-images">
@@ -401,7 +392,7 @@ border:2px solid white;">Join Now</a>
                     <h2 class="h1">Amplify your voice—reach listeners on every major platform</h2>
                     <p class="h-cc-text text-dark-gray pt-2 mt-1 lh-18"> Boost visibility through integrated social sharing and publish your podcast to leading apps like Spotify and Apple Podcasts in moments.</p>
                     <a class="link text-212121" href="" >Promote with impact
-                      <i class="bi bi-arrow-right text-212121 pe-2"></i>
+                      <img src="https://img.icons8.com/?size=100&id=355&format=png&color=000000" alt="Arrow Right" style="height: 20px; width: auto;" />
                     </a>
                   </div>
                 </div>
@@ -413,7 +404,7 @@ border:2px solid white;">Join Now</a>
                     <h2 class="h1">Transform your passion into profit with powerful monetization tools</h2>
                     <p class="h-cc-text text-dark-gray pt-2 mt-1 lh-18">Maximize your podcast revenue with Our powerful monetization tools—from Ads Marketplace and dynamic ad insertion to Apple Podcasts Subscriptions and live fan rewards.</p>
                     <a class="link text-212121"href="">Learn More
-                      <i class="bi bi-arrow-right text-212121"></i>
+                      <img src="https://img.icons8.com/?size=100&id=355&format=png&color=000000" alt="Arrow Right" style="height: 20px; width: auto;" />
                     </a>
                   </div>
                 </div>
@@ -440,7 +431,7 @@ border:2px solid white;">Join Now</a>
                   </p>
                   <div class="text-center" >
                     <a class="link text-212121" href="/podcast-ai" target="_blank" rel="noreferrer noopener">Learn more about Tea & Coffee Talks AI
-                      <i class="bi bi-arrow-right text-212121"></i>
+                      <img src="https://img.icons8.com/?size=100&id=355&format=png&color=000000" alt="Arrow Right" style="height: 20px; width: auto;" />
                     </a>
                   </div>
                   <div class="pb-ai-img position-relative pt-4 mt-1">
@@ -494,7 +485,7 @@ border:2px solid white;">Join Now</a>
                     Tea and Coffee Talks offers IAB-certified analytics along with easy-to-understand visual reports to help you expand your podcast. Track your progress, understand your listeners, and enhance your strategy using top-tier podcast data—available with every Tea and Coffee Talks hosting plan.
                   </p>
                   <a class="link text-212121 d-block" href="">Start your own podcast now
-                    <i class="bi bi-arrow-right"></i>
+                    <img src="https://img.icons8.com/?size=100&id=355&format=png&color=000000" alt="Arrow Right" style="height: 20px; width: auto;" />
                   </a>
                 </div>
               </div>
@@ -519,8 +510,8 @@ border:2px solid white;">Join Now</a>
             </div>
           </section>
 
-          <!--[-->
-          
+
+          <!-- Mobile Carousel -->
           <section class="home-app">
             <div class="bg-light-gray position-relative">
               <div class="container pt-5">
@@ -532,27 +523,9 @@ border:2px solid white;">Join Now</a>
                   <div class="col-lg-4 col-12 order-1">
                     <div class="list-item d-flex pt-3 pt-lg-5">
                       <div class="svg me-3">
-                        <svg
-                          id="record"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="36.065"
-                          height="36.065"
-                          viewBox="0 0 36.065 36.065"
-                        >
-                          <path
-                            id="_2"
-                            data-name="2"
-                            d="M326.762,2.254a4.534,4.534,0,0,1,4.508,4.508V19.723a4.508,4.508,0,0,1-9.016,0V6.762a4.534,4.534,0,0,1,4.508-4.508Zm0-2.254A6.782,6.782,0,0,0,320,6.762V19.723a6.762,6.762,0,0,0,13.524,0V6.762A6.782,6.782,0,0,0,326.762,0Z"
-                            transform="translate(-308.73)"
-                            fill="#1694a0"
-                          ></path>
-                          <path
-                            id="_1"
-                            data-name="1"
-                            d="M28.739,17.565v5.072a1.219,1.219,0,0,1-.039.3A11.075,11.075,0,0,1,19.406,31a.281.281,0,0,0-.247.278v2.064a.565.565,0,0,0,.564.564h2.818a2.256,2.256,0,0,1,2.254,2.254H11.27a2.256,2.256,0,0,1,2.254-2.254h2.818a.565.565,0,0,0,.564-.564v-2.06a.281.281,0,0,0-.247-.278,11.081,11.081,0,0,1-9.294-8.072,1.2,1.2,0,0,1-.039-.3V17.59a1.146,1.146,0,0,1,1.1-1.152A1.126,1.126,0,0,1,9.58,17.565v4.572a2.236,2.236,0,0,0,.116.715,8.8,8.8,0,0,0,16.673,0,2.236,2.236,0,0,0,.116-.715V17.59a1.146,1.146,0,0,1,1.1-1.152A1.126,1.126,0,0,1,28.739,17.565Zm7.326-8.558a16.265,16.265,0,0,1-2.177,8.153L32.12,15.709c.215-.394.409-.8.585-1.219A14.108,14.108,0,0,0,31.677,1.54L33.431.1A16.29,16.29,0,0,1,36.065,9.007Zm-5.635,0a10.681,10.681,0,0,1-.99,4.5l-1.814-1.49a8.514,8.514,0,0,0-.113-6.3c-.077-.187-.162-.37-.254-.546l1.775-1.458A10.673,10.673,0,0,1,30.43,9.007ZM8.551,5.718a8.49,8.49,0,0,0-.109,6.3l-1.814,1.49a10.709,10.709,0,0,1,.405-9.795L8.808,5.172C8.717,5.348,8.632,5.531,8.551,5.718ZM3.36,14.491c.176.416.373.824.585,1.219L2.177,17.164A16.358,16.358,0,0,1,2.638.1l1.754,1.44A14.089,14.089,0,0,0,3.363,3.527a14.119,14.119,0,0,0,0,10.964Z"
-                            transform="translate(0 -0.096)"
-                            fill="#1694a0"
-                          ></path>
+                        <svg id="record" xmlns="http://www.w3.org/2000/svg" width="36.065" height="36.065" viewBox="0 0 36.065 36.065" >
+                          <path id="_2" data-name="2" d="M326.762,2.254a4.534,4.534,0,0,1,4.508,4.508V19.723a4.508,4.508,0,0,1-9.016,0V6.762a4.534,4.534,0,0,1,4.508-4.508Zm0-2.254A6.782,6.782,0,0,0,320,6.762V19.723a6.762,6.762,0,0,0,13.524,0V6.762A6.782,6.782,0,0,0,326.762,0Z" transform="translate(-308.73)" fill="#1694a0"></path>
+                          <path id="_1" data-name="1" d="M28.739,17.565v5.072a1.219,1.219,0,0,1-.039.3A11.075,11.075,0,0,1,19.406,31a.281.281,0,0,0-.247.278v2.064a.565.565,0,0,0,.564.564h2.818a2.256,2.256,0,0,1,2.254,2.254H11.27a2.256,2.256,0,0,1,2.254-2.254h2.818a.565.565,0,0,0,.564-.564v-2.06a.281.281,0,0,0-.247-.278,11.081,11.081,0,0,1-9.294-8.072,1.2,1.2,0,0,1-.039-.3V17.59a1.146,1.146,0,0,1,1.1-1.152A1.126,1.126,0,0,1,9.58,17.565v4.572a2.236,2.236,0,0,0,.116.715,8.8,8.8,0,0,0,16.673,0,2.236,2.236,0,0,0,.116-.715V17.59a1.146,1.146,0,0,1,1.1-1.152A1.126,1.126,0,0,1,28.739,17.565Zm7.326-8.558a16.265,16.265,0,0,1-2.177,8.153L32.12,15.709c.215-.394.409-.8.585-1.219A14.108,14.108,0,0,0,31.677,1.54L33.431.1A16.29,16.29,0,0,1,36.065,9.007Zm-5.635,0a10.681,10.681,0,0,1-.99,4.5l-1.814-1.49a8.514,8.514,0,0,0-.113-6.3c-.077-.187-.162-.37-.254-.546l1.775-1.458A10.673,10.673,0,0,1,30.43,9.007ZM8.551,5.718a8.49,8.49,0,0,0-.109,6.3l-1.814,1.49a10.709,10.709,0,0,1,.405-9.795L8.808,5.172C8.717,5.348,8.632,5.531,8.551,5.718ZM3.36,14.491c.176.416.373.824.585,1.219L2.177,17.164A16.358,16.358,0,0,1,2.638.1l1.754,1.44A14.089,14.089,0,0,0,3.363,3.527a14.119,14.119,0,0,0,0,10.964Z" transform="translate(0 -0.096)" fill="#1694a0" ></path> 
                         </svg>
                       </div>
                       <div class="text-item">
@@ -562,27 +535,12 @@ border:2px solid white;">Join Now</a>
                     </div>
                     <div class="list-item d-flex pt-3 pt-lg-5">
                       <div class="svg me-3">
-                        <svg
-                          t="1727659637017"
-                          class="icon"
-                          viewBox="0 0 1024 1024"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          p-id="1666"
-                          width="32"
-                          height="32"
-                        >
-                          <path
-                            d="M837.333333 574.08a214.826667 214.826667 0 0 0-90.24 8.106667l-144-170.666667 224-272.213333a69.12 69.12 0 0 0-8.533333-96.64 69.12 69.12 0 0 0-97.493333 8.746666L512 301.866667 303.573333 49.706667a69.12 69.12 0 0 0-97.493333-8.746667 69.12 69.12 0 0 0-8.533333 97.706667l224 271.146666L277.333333 582.186667a213.333333 213.333333 0 1 0-27.306666 413.866666 213.333333 213.333333 0 0 0 139.52-330.88L512 518.826667l122.88 146.346666a213.333333 213.333333 0 1 0 202.453333-91.093333zM213.333333 913.92a128 128 0 1 1 128-128 128 128 0 0 1-128 128z m597.333334 0a128 128 0 1 1 128-128 128 128 0 0 1-128 128z"
-                            fill="#1694a0"
-                            p-id="1667"
-                          ></path>
+                        <svg t="1727659637017" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1666" width="32" height="32" >
+                          <path d="M837.333333 574.08a214.826667 214.826667 0 0 0-90.24 8.106667l-144-170.666667 224-272.213333a69.12 69.12 0 0 0-8.533333-96.64 69.12 69.12 0 0 0-97.493333 8.746666L512 301.866667 303.573333 49.706667a69.12 69.12 0 0 0-97.493333-8.746667 69.12 69.12 0 0 0-8.533333 97.706667l224 271.146666L277.333333 582.186667a213.333333 213.333333 0 1 0-27.306666 413.866666 213.333333 213.333333 0 0 0 139.52-330.88L512 518.826667l122.88 146.346666a213.333333 213.333333 0 1 0 202.453333-91.093333zM213.333333 913.92a128 128 0 1 1 128-128 128 128 0 0 1-128 128z m597.333334 0a128 128 0 1 1 128-128 128 128 0 0 1-128 128z" fill="#1694a0" p-id="1667" ></path>
                         </svg>
                       </div>
                       <div class="text-item">
-                        <h3 class="fs-18 fw-600 text-dark-gray">
-                          Effortless Editing Power
-                        </h3>
+                        <h3 class="fs-18 fw-600 text-dark-gray"> Effortless Editing Power </h3>
                         <p class="text-dark-gray lh-18 pe-lg-5">Elevate your audio with intuitive editing tools that make it easy to trim, split, combine, and export — delivering a smooth, studio-quality finish every time.</p>
                       </div>
                     </div>
@@ -590,209 +548,66 @@ border:2px solid white;">Join Now</a>
                   <div class="col-lg-4 col-12 order-3 order-lg-2">
                     <div class="position-relative app-img-group">
                         <img class="banner-mask w-auto position-absolute m-auto" src="images/phone.png" width="280" height="558" alt="Podbean App Simplifying Your Podcasting" loading="lazy"/>
-                      <div
-                        id="carouselAppSlidesOnly"
-                        class="carousel slide"
-                        data-bs-ride="carousel"
-                      >
+                      <div id="carouselAppSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                          <picture>
-                            <source
-                              type="image/webp"
-                              srcset="
-                                images/h-app01%402x_resize_1x.webp 1x,
-                                images/h-app01%402x_resize_2x.webp 2x
-                              "
-                            />
-                            <img
-                              class="app-img app-img-01"
-                              src="images/h-app01%402x_resize_1x.png"
-                              srcset="
-                                images/h-app01%402x_resize_1x.png 1x,
-                                images/h-app01%402x.png           2x
-                              "
-                              width="243"
-                              height="523"
-                              alt="Podbean
-                        App Simplifying Your Podcasting"
-                              loading="lazy"
-                            />
-                          </picture>
-
-                          <picture>
-                            <source
-                              type="image/webp"
-                              srcset="
-                                images/h-app02%402x_resize_1x.webp 1x,
-                                images/h-app02%402x_resize_2x.webp 2x
-                              "
-                            />
-                            <img
-                              class="app-img"
-                              src="images/h-app02%402x_resize_1x.png"
-                              srcset="
-                                images/h-app02%402x_resize_1x.png 1x,
-                                images/h-app02%402x.png           2x
-                              "
-                              width="243"
-                              height="523"
-                              alt="Podbean App
-                        Simplifying Your Podcasting"
-                              loading="lazy"
-                            />
-                          </picture>
-
-                          <picture>
-                            <source
-                              type="image/webp"
-                              srcset="
-                                images/h-app03%402x_resize_1x.webp 1x,
-                                images/h-app03%402x_resize_2x.webp 2x
-                              "
-                            />
-                            <img
-                              class="app-img"
-                              src="images/h-app03%402x_resize_1x.png"
-                              srcset="
-                                images/h-app03%402x_resize_1x.png 1x,
-                                images/h-app03%402x.png           2x
-                              "
-                              width="243"
-                              height="523"
-                              alt="Podbean App
-                        Simplifying Your Podcasting"
-                              loading="lazy"
-                            />
-                          </picture>
-
-                          <picture>
-                            <source
-                              type="image/webp"
-                              srcset="
-                                images/h-app04%402x_resize_1x.webp 1x,
-                                images/h-app04%402x_resize_2x.webp 2x
-                              "
-                            />
-                            <img
-                              class="app-img"
-                              src="images/h-app04%402x_resize_1x.png"
-                              srcset="
-                                images/h-app04%402x_resize_1x.png 1x,
-                                images/h-app04%402x.png           2x
-                              "
-                              width="243"
-                              height="523"
-                              alt="Podbean App
-                        Simplifying Your Podcasting"
-                              loading="lazy"
-                            />
-                          </picture>
+                            <img class="app-img app-img-01" src="images/mobile-carousel-image.webp"  width="243" height="523" alt="" loading="lazy"/>
                         </div>
                       </div>
                     </div>
                   </div>
+
                   <div class="col-lg-4 col-12 order-2 order-lg-3">
                     <div class="list-item d-flex pt-3 pt-lg-5">
                       <div class="svg me-3">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="38.792"
-                          height="38.793"
-                          viewBox="0 0 38.792 38.793"
-                        >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38.792" height="38.793" viewBox="0 0 38.792 38.793">
                           <g id="make" transform="translate(-0.013 -0.655)">
-                            <path
-                              id="_3"
-                              data-name="3"
-                              d="M29.107,25.623V.655A69.857,69.857,0,0,0,8.326,4.811c0-.049,0,20.781,0,20.781a8.243,8.243,0,0,0-4.767.606c-2.7,1.3-4.177,3.908-3.287,5.841s3.792,2.446,6.493,1.154a6.4,6.4,0,0,0,3.642-5.523L10.438,10A71.721,71.721,0,0,1,27.03,6.886V23.511a8.286,8.286,0,0,0-4.859.856c-2.7,1.29-4.175,3.9-3.288,5.834s3.79,2.453,6.493,1.159A5.945,5.945,0,0,0,29.107,25.623Zm0,0"
-                              transform="translate(0 0)"
-                              fill="#1694a0"
-                            ></path>
-                            <path
-                              id="_2"
-                              data-name="2"
-                              d="M715.986,832.33a1.212,1.212,0,0,1-1.212,1.212h-9.7a1.213,1.213,0,0,1,0-2.425h9.7A1.212,1.212,0,0,1,715.986,832.33Z"
-                              transform="translate(-677.181 -798.943)"
-                              fill="#1694a0"
-                            ></path>
-                            <path
-                              id="_1"
-                              data-name="1"
-                              d="M831.668,703.365a1.212,1.212,0,0,1,1.213,1.212v9.7a1.212,1.212,0,1,1-2.425,0v-9.7A1.212,1.212,0,0,1,831.668,703.365Z"
-                              transform="translate(-798.925 -676.039)"
-                              fill="#1694a0"
-                            ></path>
+                            <path id="_3" data-name="3" d="M29.107,25.623V.655A69.857,69.857,0,0,0,8.326,4.811c0-.049,0,20.781,0,20.781a8.243,8.243,0,0,0-4.767.606c-2.7,1.3-4.177,3.908-3.287,5.841s3.792,2.446,6.493,1.154a6.4,6.4,0,0,0,3.642-5.523L10.438,10A71.721,71.721,0,0,1,27.03,6.886V23.511a8.286,8.286,0,0,0-4.859.856c-2.7,1.29-4.175,3.9-3.288,5.834s3.79,2.453,6.493,1.159A5.945,5.945,0,0,0,29.107,25.623Zm0,0" transform="translate(0 0)" fill="#1694a0" ></path>
+                            <path id="_2" data-name="2" d="M715.986,832.33a1.212,1.212,0,0,1-1.212,1.212h-9.7a1.213,1.213,0,0,1,0-2.425h9.7A1.212,1.212,0,0,1,715.986,832.33Z" transform="translate(-677.181 -798.943)" fill="#1694a0"></path>
+                            <path id="_1" data-name="1" d="M831.668,703.365a1.212,1.212,0,0,1,1.213,1.212v9.7a1.212,1.212,0,1,1-2.425,0v-9.7A1.212,1.212,0,0,1,831.668,703.365Z" transform="translate(-798.925 -676.039)" fill="#1694a0" ></path>
                           </g>
                         </svg>
                       </div>
                       <div class="text-item">
                        <h3 class="fs-18 fw-600 text-dark-gray">Personalize Every Episode</h3>
-                       <p class="text-dark-gray lh-18 pe-xl-5">
-                        Add a unique flair to your podcast using handpicked music, custom intros and outros, or your own audio for a truly signature sound.
-                      </p>
-
+                       <p class="text-dark-gray lh-18 pe-xl-5"> Add a unique flair to your podcast using handpicked music, custom intros and outros, or your own audio for a truly signature sound.</p>
                       </div>
                     </div>
                     <div class="list-item d-flex pt-3 pt-lg-5">
                       <div class="svg me-3">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="41.649"
-                          height="41.637"
-                          viewBox="0 0 41.649 41.637"
-                        >
-                          <path
-                            id="publish-ai"
-                            d="M99.038,113.971a3.162,3.162,0,0,1,.711,6.244l0,5.81a1.581,1.581,0,0,0,.647,1.274l.158.1,15.093,8.5a1.581,1.581,0,0,0,1.369.089l.185-.09,15.02-8.49a1.581,1.581,0,0,0,.791-1.189l.013-.188v-1.78a.791.791,0,0,1,.647-.778l.142-.013a.791.791,0,0,1,.791.791v1.78A3.162,3.162,0,0,1,133,128.781l-15.02,8.49a3.162,3.162,0,0,1-3.107,0l-15.094-8.5a3.162,3.162,0,0,1-1.613-2.756v-5.85a3.162,3.162,0,0,1,.87-6.2Zm15.246-4.776,6.486,15.844h-2.389l-1.85-4.8h-6.625l-1.738,4.8h-2.228l6.084-15.844h2.261Zm10.614,0v15.844h-2.1V109.194h2.1Zm-6.916-12.176,15.02,8.49a3.162,3.162,0,0,1,1.606,2.753l0,5.807a3.162,3.162,0,1,1-1.583,0l0-5.81a1.581,1.581,0,0,0-.645-1.273l-.158-.1L117.2,98.4a1.581,1.581,0,0,0-1.368-.092l-.187.089-15.093,8.5a1.581,1.581,0,0,0-.794,1.189l-.011.188v1.752a.791.791,0,0,1-1.57.142l-.013-.142v-1.752a3.162,3.162,0,0,1,1.612-2.755l15.093-8.5A3.162,3.162,0,0,1,117.982,97.019ZM99.038,115.552a1.581,1.581,0,1,0,1.581,1.581A1.581,1.581,0,0,0,99.038,115.552Zm34.783,0a1.581,1.581,0,1,0,1.581,1.581A1.581,1.581,0,0,0,133.822,115.552Zm-20.715-4.694a20.358,20.358,0,0,1-.854,3.026l-1.739,4.648h5.371l-1.654-4.389-.183-.489Q113.525,112.274,113.106,110.858Z"
-                            transform="translate(-95.601 -96.327)"
-                            fill="#1694a0"
-                            stroke="#1694a0"
-                            stroke-width="0.5"
-                          ></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41.649" height="41.637" viewBox="0 0 41.649 41.637">
+                          <path id="publish-ai" d="M99.038,113.971a3.162,3.162,0,0,1,.711,6.244l0,5.81a1.581,1.581,0,0,0,.647,1.274l.158.1,15.093,8.5a1.581,1.581,0,0,0,1.369.089l.185-.09,15.02-8.49a1.581,1.581,0,0,0,.791-1.189l.013-.188v-1.78a.791.791,0,0,1,.647-.778l.142-.013a.791.791,0,0,1,.791.791v1.78A3.162,3.162,0,0,1,133,128.781l-15.02,8.49a3.162,3.162,0,0,1-3.107,0l-15.094-8.5a3.162,3.162,0,0,1-1.613-2.756v-5.85a3.162,3.162,0,0,1,.87-6.2Zm15.246-4.776,6.486,15.844h-2.389l-1.85-4.8h-6.625l-1.738,4.8h-2.228l6.084-15.844h2.261Zm10.614,0v15.844h-2.1V109.194h2.1Zm-6.916-12.176,15.02,8.49a3.162,3.162,0,0,1,1.606,2.753l0,5.807a3.162,3.162,0,1,1-1.583,0l0-5.81a1.581,1.581,0,0,0-.645-1.273l-.158-.1L117.2,98.4a1.581,1.581,0,0,0-1.368-.092l-.187.089-15.093,8.5a1.581,1.581,0,0,0-.794,1.189l-.011.188v1.752a.791.791,0,0,1-1.57.142l-.013-.142v-1.752a3.162,3.162,0,0,1,1.612-2.755l15.093-8.5A3.162,3.162,0,0,1,117.982,97.019ZM99.038,115.552a1.581,1.581,0,1,0,1.581,1.581A1.581,1.581,0,0,0,99.038,115.552Zm34.783,0a1.581,1.581,0,1,0,1.581,1.581A1.581,1.581,0,0,0,133.822,115.552Zm-20.715-4.694a20.358,20.358,0,0,1-.854,3.026l-1.739,4.648h5.371l-1.654-4.389-.183-.489Q113.525,112.274,113.106,110.858Z" transform="translate(-95.601 -96.327)" fill="#1694a0" stroke="#1694a0" stroke-width="0.5" ></path>
                         </svg>
                       </div>
                       <div class="text-item">
                         <h3 class="fs-18 fw-600 text-dark-gray">Simple Publishing & Smart Management</h3>
-                        <p class="text-dark-gray lh-18 pe-xl-5 pb-4 pb-lg-0">
-                          Seamlessly release episodes with AI-powered optimization, schedule your content in advance, and gain valuable insights with real-time audience and engagement tracking.
-                        </p>
+                        <p class="text-dark-gray lh-18 pe-xl-5 pb-4 pb-lg-0"> Seamlessly release episodes with AI-powered optimization, schedule your content in advance, and gain valuable insights with real-time audience and engagement tracking.</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="h-app-svg w-100 position-absolute p-b-n1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="100%"
-                  height="116.864"
-                  preserveAspectRatio="none"
-                  viewBox="0 0 1919.895 116.864"
-                >
-                  <path
-                    id="app-bg"
-                    d="M1920,3165.778s-650.614,94.254-1178.7,14.245S.105,3190.512.105,3190.512v-95.145H1920Z"
-                    transform="translate(1920 3212.231) rotate(180)"
-                    fill="#e6e6e6"
-                  ></path>
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="116.864" preserveAspectRatio="none" viewBox="0 0 1919.895 116.864" >
+                  <path id="app-bg" d="M1920,3165.778s-650.614,94.254-1178.7,14.245S.105,3190.512.105,3190.512v-95.145H1920Z" transform="translate(1920 3212.231) rotate(180)" fill="#e6e6e6" ></path>
                 </svg>
               </div>
             </div>
-            <div
-              class="download-app container text-center pt-4 mt-3 pb-lg-5 mb-5"
-            >
+            <div class="download-app container text-center pt-4 mt-3 pb-lg-5 mb-5">
               <h2 class="fs-45 text-212121 fw-600 pt-1">Download it now.</h2>
               <div class="download-app d-flex justify-content-center pt-2">
                 <a class="me-1" href="" >
-                  <img class="create-img" src="images/ios-app%402x_resize_1x.png" width="184" height="64" alt="" loading="lazy" />
+                  <img class="create-img" src="images/iosapp-button.webp" width="184" height="64" alt="" loading="lazy" />
                 </a>
                 <a href="">
-                    <img class="create-img" src="images/google-play%402x_resize_1x.png" width="203" height="64" alt="" loading="lazy"/>
+                    <img class="create-img" src="images/googleplay-button.webp" width="203" height="64" alt="" loading="lazy"/>
                 </a>
               </div>
               <p class="text-dark-gray pt-2 lh-16">Tap into your creativity and record crystal-clear audio<br /> with ease—right from your mobile device!</p>
             </div>
           </section>
+         
+          <!-- Mobile Carousel -->
+
 
           <div class="home-live pb-5">
             <div class="container mb-3">
@@ -808,7 +623,7 @@ border:2px solid white;">Join Now</a>
                     </p>
 
                     <a class="link text-212121" href="" >Learn How to Start a Live Stream
-                      <i class="bi bi-arrow-right"></i>
+                    <img src="https://img.icons8.com/?size=100&id=355&format=png&color=000000" alt="Arrow Right" style="height: 20px; width: auto;" />
                     </a>
                   </div>
                 </div>
@@ -817,318 +632,9 @@ border:2px solid white;">Join Now</a>
           </div>
           <!--]--><!--[-->
 
-          <div class="home-enterprise bg-navy-blue position-relative py-lg-5">
-            <div class="container mt-lg-5 pt-5 pb-4 pb-lg-5">
-              <div class="row justify-content-center pb-4">
-                <div class="col-lg-6 col-md-12 left-text">
-                  <h2 class="h1 text-white">
-                    Secure, Scalable
-                    <div class="typo">
-                      <p></p>
-                      <div class="last-line"></div>
-                    </div>
-                    <p>Podcast Hosting Solution</p>
-                  </h2>
-                  <p class="h-cc-text text-white lh-18 words">
-                  Enterprise-level podcast hosting with powerful features to streamline and manage your organization’s entire podcast network.
-                  </p>
-                  <a class="link text-white fw-bold" href="">Explore Enterprise Podcast Solution
-                    <i class="bi bi-arrow-right text-white"></i>
-                  </a>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                  <div class="logo-bg mt-5 mt-lg-0 mb-5 mb-lg-0">
-                    <p class="text-white pb-2">The choice of leading organizations around the world</p>
-                    <div class="row d-flex justify-content-between align-items-center">
-                      <img loading="lazy" width="566" height="155" class="jp" src="images/jp-morgan.png" alt=""/>
-                      <img loading="lazy" width="377" height="155" class="ibm" src="images/IBM.png" alt=""/>
-                      <img loading="lazy" width="566" height="155" class="university" src="images/university.png" alt=""/>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center pt-3" >
-                      <img loading="lazy" width="566" height="155" class="hovver" src="images/hovver.png" alt="" />
-                      <img loading="lazy" width="379" height="155" class="aflac" src="images/aflac.png" alt="" />
-                      <img loading="lazy" width="750" height="155" class="paychex" src="images/paychex.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="bg-img"></div>
-          </div>
-
        
 
-          <!-- <div class="home-feature-podcast py-5 my-5">
-            <h2 class="fs-50 fw-600 text-center pt-lg-5 mt-1 pb-4 mb-3">
-              Featured Podcasts
-            </h2>
-            <div class="podcasts d-flex flex-wrap">
-              <div class="px-3">
-                <a
-                  class="text-decoration-none"
-                  href="https://theminoritymindset.podbean.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    src="images/Copy_of_Copy_of_The_Minority_Mindset_3000_3000_px_bbsrg_300x300.jpg"
-                    width="300"
-                    height="300"
-                    alt="The Minority Mindset Show"
-                    loading="lazy"
-                  />
-                  <span class="icon-week"></span>
-
-                  <p class="text-truncate px-1 fs-18 mb-1 title pt-3">
-                    The Minority Mindset Show
-                  </p>
-                  <p class="fs-14 px-1 category">Business:Investing</p></a
-                >
-              </div>
-              <div class="px-3">
-                <a
-                  class="text-decoration-none"
-                  href="https://purehustlepodcast.podbean.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    src="images/720581-1529883180532-4a3f4e7918422_300x300.jpg"
-                    width="300"
-                    height="300"
-                    alt="Pure Hustle Podcast"
-                    loading="lazy"
-                  />
-
-                  <p class="text-truncate px-1 fs-18 mb-1 title pt-3">
-                    Pure Hustle Podcast
-                  </p>
-                  <p class="fs-14 px-1 category">
-                    Business:Entrepreneurship
-                  </p></a
-                >
-              </div>
-              <div class="px-3">
-                <a
-                  class="text-decoration-none"
-                  href="https://podcast.discoposse.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    src="images/DiscoPosse_Podcast_logo_300x300.png"
-                    width="300"
-                    height="300"
-                    alt="DiscoPosse Podcast"
-                    loading="lazy"
-                  />
-
-                  <p class="text-truncate px-1 fs-18 mb-1 title pt-3">
-                    DiscoPosse Podcast
-                  </p>
-                  <p class="fs-14 px-1 category">Technology</p></a
-                >
-              </div>
-              <div class="px-3">
-                <a
-                  class="text-decoration-none"
-                  href="https://TheBoyFromSavoy.podbean.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    src="images/The_Boy_Season_4_Spotify_Under2MB_300x300.jpg"
-                    width="300"
-                    height="300"
-                    alt="The Boy From Savoy"
-                    loading="lazy"
-                  />
-
-                  <p class="text-truncate px-1 fs-18 mb-1 title pt-3">
-                    The Boy From Savoy
-                  </p>
-                  <p class="fs-14 px-1 category">
-                    Kids & Family:Stories for Kids
-                  </p></a
-                >
-              </div>
-              <div class="px-3">
-                <a
-                  class="text-decoration-none"
-                  href="https://podcast.earthfiles.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    src="images/Earthfiles-YouTube-Channel_300x300.jpg"
-                    width="300"
-                    height="300"
-                    alt="Earthfiles Podcast with Linda Moulton Howe"
-                    loading="lazy"
-                  />
-
-                  <p class="text-truncate px-1 fs-18 mb-1 title pt-3">
-                    Earthfiles Podcast with Linda Moulton Howe
-                  </p>
-                  <p class="fs-14 px-1 category">Science</p></a
-                >
-              </div>
-              <div class="px-3">
-                <a
-                  class="text-decoration-none"
-                  href="https://Jojo1234.podbean.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    src="images/3000_300x300.png"
-                    width="300"
-                    height="300"
-                    alt="Mesopotamia"
-                    loading="lazy"
-                  />
-
-                  <p class="text-truncate px-1 fs-18 mb-1 title pt-3">
-                    Mesopotamia
-                  </p>
-                  <p class="fs-14 px-1 category">History</p></a
-                >
-              </div>
-              <div class="px-3">
-                <a
-                  class="text-decoration-none"
-                  href="https://tasia712sk.podbean.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    src="images/Untitled_300x300.jpg"
-                    width="300"
-                    height="300"
-                    alt="One Quote, One Story"
-                    loading="lazy"
-                  />
-
-                  <p class="text-truncate px-1 fs-18 mb-1 title pt-3">
-                    One Quote, One Story
-                  </p>
-                  <p class="fs-14 px-1 category">
-                    Education:Self-Improvement
-                  </p></a
-                >
-              </div>
-              <div class="px-3">
-                <a
-                  class="text-decoration-none"
-                  href="https://givemethevin.podbean.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    src="images/JCW-YPSNL_wjkvae_300x300.jpg"
-                    width="300"
-                    height="300"
-                    alt="The John Clay Wolfe Show"
-                    loading="lazy"
-                  />
-
-                  <p class="text-truncate px-1 fs-18 mb-1 title pt-3">
-                    The John Clay Wolfe Show
-                  </p>
-                  <p class="fs-14 px-1 category">Arts:Design</p></a
-                >
-              </div>
-              <div class="px-3">
-                <a
-                  class="text-decoration-none"
-                  href="https://andrewct78.podbean.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    src="images/03d49871d725b633b2b22b814d04bdba_300x300.jpg"
-                    width="300"
-                    height="300"
-                    alt="Essential Survival Skills"
-                    loading="lazy"
-                  />
-
-                  <p class="text-truncate px-1 fs-18 mb-1 title pt-3">
-                    Essential Survival Skills
-                  </p>
-                  <p class="fs-14 px-1 category">Science:Life Sciences</p></a
-                >
-              </div>
-              <div class="px-3">
-                <a
-                  class="text-decoration-none"
-                  href="https://bethathealinggirlpodcast.podbean.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    src="images/Add_a_heading_1000_x_1000_px_900_x_900_px_-36c0hk_300x300.png"
-                    width="300"
-                    height="300"
-                    alt="BeThatHealingGirl Podcast"
-                    loading="lazy"
-                  />
-
-                  <p class="text-truncate px-1 fs-18 mb-1 title pt-3">
-                    BeThatHealingGirl Podcast
-                  </p>
-                  <p class="fs-14 px-1 category">
-                    Society & Culture:Relationships
-                  </p></a
-                >
-              </div>
-              <div class="px-3">
-                <a
-                  class="text-decoration-none"
-                  href="https://humancapitalleadership.podbean.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    src="images/Picture15_300x300.jpg"
-                    width="300"
-                    height="300"
-                    alt="Human Capital Leadership"
-                    loading="lazy"
-                  />
-
-                  <p class="text-truncate px-1 fs-18 mb-1 title pt-3">
-                    Human Capital Leadership
-                  </p>
-                  <p class="fs-14 px-1 category">Business:Management</p></a
-                >
-              </div>
-              <div class="px-3">
-                <a
-                  class="text-decoration-none"
-                  href="https://naturesoundsoasisrelaxingsounds.podbean.com"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <img
-                    src="images/1679493321015-0d9a2e286f685abdae92c2c32164dee9_300x300.jpeg"
-                    width="300"
-                    height="300"
-                    alt="Nature Sounds Oasis | Relaxing Nature Sounds For Sleep, Meditation, Relaxation Or Focus | Sounds Of Nature | Sleep Sounds, Sleep Music, Meditation Sounds, Ocean Waves, Rain, White Noise & More"
-                    loading="lazy"
-                  />
-
-                  <p class="text-truncate px-1 fs-18 mb-1 title pt-3">
-                    Nature Sounds Oasis | Relaxing Nature Sounds For Sleep,
-                    Meditation, Relaxation Or Focus | Sounds Of Nature | Sleep
-                    Sounds, Sleep Music, Meditation Sounds, Ocean Waves, Rain,
-                    White Noise & More
-                  </p>
-                  <p class="fs-14 px-1 category">Music</p></a
-                >
-              </div>
-            </div>
-          </div> -->
+         
           <section class="home-source bg-light-gray position-relative py-5">
             <div class="container pt-5 pb-3">
               <div class="text-center">
@@ -1145,7 +651,7 @@ border:2px solid white;">Join Now</a>
                   <h3 class="h5 text-212121 pt-2 mb-1">Blog</h3>
                   <p class="text-dark-gray lh-18 px-lg-4">Discover fresh podcasting strategies, industry updates, and valuable tips with our ongoing updates.</p>
                   <a class="fw-500 text-212121 letter-spacing-hover mb-2 d-inline-block text-hover-green" href="">Read
-                    <i class="bi bi-arrow-right ms-1"></i>
+                    <img src="https://img.icons8.com/?size=100&id=355&format=png&color=000000" alt="Arrow Right" style="height: 20px; width: auto;" />
                   </a>
                 </div>
                 <div class="col-xl-3 col-md-6 col-12 text-center pb-5">
@@ -1157,7 +663,7 @@ border:2px solid white;">Join Now</a>
                   <h3 class="h5 text-212121 pt-2 mb-1">Tutorials</h3>
                   <p class="text-dark-gray lh-18 px-lg-4">Clear, user-friendly guides to take you from the basics to expert-level features.</p>
                   <a class="fw-500 text-212121 letter-spacing-hover mb-2 d-inline-block text-hover-green"href="" >Learn
-                    <i class="bi bi-arrow-right ms-1"></i>
+                   <img src="https://img.icons8.com/?size=100&id=355&format=png&color=000000" alt="Arrow Right" style="height: 20px; width: auto;" />
                   </a>
                 </div>
                 <div class="col-xl-3 col-md-6 col-12 text-center pb-5">
@@ -1169,7 +675,7 @@ border:2px solid white;">Join Now</a>
                   <h3 class="h5 text-212121 pt-2 mb-1">Webinars</h3>
                   <p class="text-dark-gray lh-18 px-lg-4">On-demand sessions led by experts to help you sharpen your podcasting skills whenever it suits you.</p>
                   <a class="fw-500 text-212121 letter-spacing-hover mb-2 d-inline-block text-hover-green" href="">Watch Now
-                    <i class="bi bi-arrow-right ms-1"></i>
+                    <img src="https://img.icons8.com/?size=100&id=355&format=png&color=000000" alt="Arrow Right" style="height: 20px; width: auto;" />
                   </a>
                 </div>
                 <div class="col-xl-3 col-md-6 col-12 text-center pb-5">
@@ -1184,7 +690,7 @@ border:2px solid white;">Join Now</a>
                   <h3 class="h5 text-212121 pt-2 mb-1">Help Center</h3>
                   <p class="text-dark-gray lh-18 px-lg-4">Get instant support with our in-depth guides, step-by-step articles, and easy-to-browse FAQs.</p>
                   <a class="fw-500 text-212121 letter-spacing-hover mb-2 d-inline-block text-hover-green" href="" > Get Help
-                    <i class="bi bi-arrow-right ms-1"></i>
+                    <img src="https://img.icons8.com/?size=100&id=355&format=png&color=000000" alt="Arrow Right" style="height: 20px; width: auto;" />
                   </a>
                 </div>
               </div>
@@ -1203,7 +709,7 @@ border:2px solid white;">Join Now</a>
   <h2 class="accordion-header" id="flush-headingFirst">
     <button class="accordion-button shadow-none fw-bold d-flex justify-content-between bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFirst" aria-expanded="false" aria-controls="flush-collapseFirst">
       <span>How do I start a podcast?</span>
-      <i class="bi bi-plus h4 text-green"></i>
+      <img src="https://img.icons8.com/?size=100&id=85018&format=png&color=000000" alt="" style="height: 20px; width: auto;" />
     </button>
   </h2>
   <div id="flush-collapseFirst" class="accordion-collapse collapse" aria-labelledby="flush-headingFirst" data-bs-parent="#accordionFlushFaq">
@@ -1223,7 +729,7 @@ border:2px solid white;">Join Now</a>
   <h2 class="accordion-header" id="flush-headingOne">
     <button class="accordion-button shadow-none fw-bold d-flex justify-content-between bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
       <span>Is it easy to start a podcast?</span>
-      <i class="bi bi-plus h4 text-green"></i>
+            <img src="https://img.icons8.com/?size=100&id=85018&format=png&color=000000" alt="" style="height: 20px; width: auto;" />
     </button>
   </h2>
   <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushFaq">
@@ -1237,7 +743,7 @@ border:2px solid white;">Join Now</a>
   <h2 class="accordion-header" id="flush-headingTwo">
     <button class="accordion-button shadow-none fw-bold d-flex justify-content-between bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
       <span>Can I start a podcast for free?</span>
-      <i class="bi bi-plus h4 text-green"></i>
+            <img src="https://img.icons8.com/?size=100&id=85018&format=png&color=000000" alt="" style="height: 20px; width: auto;" />
     </button>
   </h2>
   <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushFaq">
@@ -1251,7 +757,7 @@ border:2px solid white;">Join Now</a>
   <h2 class="accordion-header" id="flush-headingThree">
     <button class="accordion-button shadow-none fw-bold d-flex justify-content-between bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
       <span>How do I get listed on Apple Podcasts?</span>
-      <i class="bi bi-plus h4 text-green"></i>
+            <img src="https://img.icons8.com/?size=100&id=85018&format=png&color=000000" alt="" style="height: 20px; width: auto;" />
     </button>
   </h2>
   <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushFaq">
@@ -1265,7 +771,7 @@ border:2px solid white;">Join Now</a>
   <h2 class="accordion-header" id="flush-headingFour">
     <button class="accordion-button shadow-none fw-bold d-flex justify-content-between bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
       <span>How do I get on Spotify?</span>
-      <i class="bi bi-plus h4 text-green"></i>
+            <img src="https://img.icons8.com/?size=100&id=85018&format=png&color=000000" alt="" style="height: 20px; width: auto;" />
     </button>
   </h2>
   <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushFaq">
@@ -1279,7 +785,7 @@ border:2px solid white;">Join Now</a>
   <h2 class="accordion-header" id="flush-headingFive">
     <button class="accordion-button shadow-none fw-bold d-flex justify-content-between bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
       <span>What stats do I get?</span>
-      <i class="bi bi-plus h4 text-green"></i>
+            <img src="https://img.icons8.com/?size=100&id=85018&format=png&color=000000" alt="" style="height: 20px; width: auto;" />
     </button>
   </h2>
   <div class="accordion-collapse collapse" id="flush-collapseFive" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushFaq">
@@ -1293,7 +799,7 @@ border:2px solid white;">Join Now</a>
   <h2 class="accordion-header" id="flush-headingSix">
     <button class="accordion-button shadow-none fw-bold d-flex justify-content-between bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
       <span>How do I switch from another host?</span>
-      <i class="bi bi-plus h4 text-green"></i>
+            <img src="https://img.icons8.com/?size=100&id=85018&format=png&color=000000" alt="" style="height: 20px; width: auto;" />
     </button>
   </h2>
   <div class="accordion-collapse collapse" id="flush-collapseSix" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushFaq">
@@ -1307,7 +813,7 @@ border:2px solid white;">Join Now</a>
   <h2 class="accordion-header" id="flush-headingSeven">
     <button class="accordion-button shadow-none fw-bold d-flex justify-content-between bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
       <span>How can I promote my podcast?</span>
-      <i class="bi bi-plus h4 text-green"></i>
+            <img src="https://img.icons8.com/?size=100&id=85018&format=png&color=000000" alt="" style="height: 20px; width: auto;" />
     </button>
   </h2>
   <div class="accordion-collapse collapse" id="flush-collapseSeven" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushFaq">
@@ -1321,7 +827,7 @@ border:2px solid white;">Join Now</a>
   <h2 class="accordion-header" id="flush-headingEight">
     <button class="accordion-button shadow-none fw-bold d-flex justify-content-between bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
       <span>How do I make money from my podcast?</span>
-      <i class="bi bi-plus h4 text-green"></i>
+            <img src="https://img.icons8.com/?size=100&id=85018&format=png&color=000000" alt="" style="height: 20px; width: auto;" />
     </button>
   </h2>
   <div class="accordion-collapse collapse" id="flush-collapseEight" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushFaq">
@@ -1515,309 +1021,9 @@ border:2px solid white;">Join Now</a>
         </div>
       </div>
     </div>
-    <!--]-->
 
-    <script src="js/lazysizes.min.js" async=""></script>
-    <script src="js/webfontloader.js"></script>
-    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap Script Link -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/gsap.bundle.min.js"></script>
-    <script src="js/home-script.js"></script>
-    <script src="js/aos.js"></script>
-    <script>
-      WebFont.load({
-        google: {
-          api: "https://fonts.googleapis.com/css2",
-          families: [
-            "Inter:wght@100;200;300;400;500;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=optional",
-          ],
-        },
-      });
-      WebFont.load({
-        google: {
-          api: "https://fonts.googleapis.com/css2",
-          families: [
-            "Open+Sans:ital,wght@0,300..800;1,300..800&display=optional",
-          ],
-        },
-      });
-      window.interdeal = {
-        sitekey: "97b4a10162ccfb76f8c8a397ad402d87",
-        Position: "right",
-        domains: {
-          js: "https://cdn.equalweb.com/",
-          acc: "https://access.equalweb.com/",
-        },
-        Menulang: "EN",
-        btnStyle: {
-          vPosition: ["80%", "80%"],
-          scale: ["0.5", "0.5"],
-          color: {
-            main: "#2e850f",
-            second: "#ffffff",
-          },
-          icon: {
-            outline: false,
-            type: 2,
-            shape: "circle",
-          },
-        },
-      };
-      (function (doc, head, body) {
-        var coreCall = doc.createElement("script");
-        coreCall.src = interdeal.domains.js + "core/5.0.10/accessibility.js";
-        coreCall.defer = true;
-        coreCall.integrity =
-          "sha512-gKQdQe59Hw864B9Pbxo+0aPeJJQdKODsfg0Vwf+zIQcRS7uR+kd3oEX3ClAdDERLQbO5LmliXmzjNjrxkP5wgA==";
-        coreCall.crossOrigin = "anonymous";
-        coreCall.setAttribute("data-cfasync", true);
-        body ? body.appendChild(coreCall) : head.appendChild(coreCall);
-      })(document, document.head, document.body);
-    </script>
-    <script>
-      jQuery(function ($) {
-        AOS.init();
-        let container = $("#carouselAppSlidesOnly .carousel-inner");
-        container.append(container.children().clone());
-        container.append(container.children().clone());
-        container.append(container.children().clone());
-        container.slick({
-          slidesToShow: 1,
-          swipeToSlide: true,
-          infinite: false,
-          autoplay: true,
-          autoplaySpeed: 1500,
-        });
 
-        let backgroundVideo = {
-          desktopLandscapeH264Main:
-            "/videos/HeroSection-Bg-Video.mp4",
-          mobilePortraitH264Main:
-            "/videos/HeroSection-Bg-Video.mp4",
-          desktopPoster:
-            "/images/logo.png",
-          mobilePoster:
-            "/images/logo.png",
-        };
-        let isMobile = getIsMobile();
-        let isSupportH264Main = canPlayVideo("video/mp4");
-
-        function canPlayVideo(codec) {
-          const video = document.createElement("video");
-          return video.canPlayType(codec) !== "";
-        }
-
-        function getIsMobile() {
-          return window.innerWidth < 576;
-        }
-
-        loadBannerVideo();
-        function loadBannerVideo() {
-          $("#banner-video-img").show();
-
-          let videoSrc;
-          let videoType = "video/mp4";
-          if (isMobile) {
-            if (isSupportH264Main) {
-              videoSrc = backgroundVideo.mobilePortraitH264Main;
-            }
-            $("#banner-video-item")
-              .addClass("mobile-video")
-              .removeClass("web-video");
-          } else {
-            if (isSupportH264Main) {
-              videoSrc = backgroundVideo.desktopLandscapeH264Main;
-            }
-            $("#banner-video-item")
-              .addClass("web-video")
-              .removeClass("mobile-video");
-          }
-          if (videoSrc) {
-            _loadVideo(videoSrc, videoType);
-          }
-        }
-        async function _loadVideo(videoSrc, videoType) {
-          try {
-            const response = await fetch(videoSrc);
-            if (!response.ok) {
-              throw new Error(`response error`);
-            }
-            // Buffer it
-            const buffer = await response.arrayBuffer();
-
-            const blobUrl = URL.createObjectURL(
-              new Blob([buffer], { type: videoType })
-            );
-            const videoElement = document.getElementById("banner-video");
-            videoElement.src = blobUrl;
-
-            videoElement.addEventListener("error", (e) => {
-              $("#banner-video-img").show();
-              $("#banner-video").hide();
-              console.error("video load failed.");
-            });
-
-            videoElement.load();
-
-            $("#banner-video").show();
-            $("#banner-video-img").hide();
-          } catch (error) {
-            console.error("video load failed:", error);
-          }
-        }
-
-        $(window).resize(function () {
-          if (isMobile != getIsMobile()) {
-            isMobile = getIsMobile();
-            loadBannerVideo();
-          }
-        });
-        var isHome = false;
-        var passiveSupported = false;
-
-        try {
-          var options = Object.defineProperty({}, "passive", {
-            get: function () {
-              passiveSupported = true;
-            },
-          });
-
-          window.addEventListener("test", null, options);
-        } catch (err) {}
-
-        function initHeaderTransparent() {
-          var top = $(document).scrollTop();
-          $(".navbar").removeClass("header-bg-transparent");
-          if (isHome) {
-            $(".navbar").removeClass("nav-text-black");
-          }
-          if (top <= 30) {
-            $(".navbar").addClass("header-bg-transparent");
-            if (isHome) {
-              $(".navbar").addClass("nav-text-black");
-            }
-          }
-        }
-        if (passiveSupported) {
-          document.addEventListener("scroll", initHeaderTransparent, {
-            passive: true,
-          });
-        } else {
-          $(window).scroll(initHeaderTransparent);
-        }
-
-        initHeaderTransparent();
-
-        $("#search-input")
-          .focusin(function () {
-            var top = $(document).scrollTop();
-            if (top <= 30) {
-              $(".navbar").removeClass("header-bg-transparent");
-              if (isHome) {
-                $(".navbar").removeClass("nav-text-black");
-              }
-            }
-          })
-          .focusout(function () {
-            var top = $(document).scrollTop();
-            if (top <= 30) {
-              $(".navbar").addClass("header-bg-transparent");
-              if (isHome) {
-                $(".navbar").addClass("nav-text-black");
-              }
-            }
-          });
-        var isHome = false;
-
-        function checkDiscoverShow() {
-          if (isHome) {
-            if (window.innerWidth < 1400 && window.innerWidth > 992) {
-              $("#discover").removeClass("d-lg-block").addClass("d-none");
-              $(".navbar-nav .line").addClass("d-none");
-            } else {
-              $("#discover").addClass("d-lg-block").removeClass("d-none");
-              $(".navbar-nav .line").removeClass("d-none");
-            }
-          } else {
-            $("#discover").addClass("d-lg-block").removeClass("d-none");
-            $(".navbar-nav .line").removeClass("d-none");
-          }
-
-          if (window.innerWidth < 992) {
-            $("#discover .dropdown-toggle")
-              .removeClass("d-lg-block")
-              .addClass("d-none");
-            $("#discover .mobile").addClass("d-lg-block").removeClass("d-none");
-          } else {
-            $("#discover .dropdown-toggle")
-              .addClass("d-lg-block")
-              .removeClass("d-none");
-            $("#discover .mobile").removeClass("d-lg-block").addClass("d-none");
-          }
-        }
-
-        $(window).resize(function () {
-          checkDiscoverShow();
-        });
-        checkDiscoverShow();
-
-        function onNavigationDropdownShow() {
-          $(".navbar").addClass("open-sub-menu");
-        }
-
-        ["navbarDropdown1", "navbarDropdown2", "navbarDropdown3"].forEach(
-          function (item) {
-            var navbarDropdown = document.getElementById(item);
-            if (navbarDropdown) {
-              navbarDropdown.addEventListener("show.bs.dropdown", function () {
-                setTimeout(onNavigationDropdownShow, 100);
-              });
-
-              navbarDropdown.addEventListener("hide.bs.dropdown", function () {
-                onNavigationDropdownHide();
-              });
-            }
-          }
-        );
-
-        function onNavigationDropdownHide() {
-          $(".navbar").removeClass("open-sub-menu");
-        }
-
-        $("body").delegate("#mobile-search-icon", "click", function () {
-          showSearchNavBar();
-          $("#mobile-search-form input").focus();
-        });
-
-        $("body").delegate("#mobile-search-form .cancel", "click", function () {
-          $("#mobile-search-form").addClass("close-search-form");
-          $("#mobile-search-form").removeClass("open-search-form");
-        });
-
-        function showSearchNavBar() {
-          $("#mobile-search-form").addClass("open-search-form");
-          $("#mobile-search-form").removeClass("close-search-form");
-        }
-
-        $(".mobile-dashboard").click(function () {
-          $(".navbar").toggleClass("mobile-menu-expanded-state");
-        });
-      });
-    </script>
-    <div class="d-none">
-     
-     
-      
-      <script src="js/oct.js" type="text/javascript"></script>
-      
-      <script
-        type="text/javascript"
-        id="hs-script-loader"
-        async=""
-        defer=""
-        src="js/2475935.js"
-      ></script>
-    </div>
   </body>
 </html>

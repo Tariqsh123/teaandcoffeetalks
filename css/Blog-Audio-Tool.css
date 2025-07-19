@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#ai-studio-hero-section{
+    background:linear-gradient(to top,#0c484d,#3eb9c1);
+}
+#ai-studio-workflow-container{
+    background: none;
+    box-shadow: none;
+}
+#ai-studio-workflow-container h2{
+    color: black;
+    font-size: 40px;
+}

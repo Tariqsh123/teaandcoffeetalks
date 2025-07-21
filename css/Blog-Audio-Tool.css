@@ -4,7 +4,12 @@
     box-sizing: border-box;
 }
 #ai-studio-hero-section{
-    background:linear-gradient(to top,#0c484d,#3eb9c1);
+    /* background:linear-gradient(to top,#0c484d,#3eb9c1); */
+    background: url("/images/blog-audio-tool-banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-clip: border-box;
 }
 #ai-studio-workflow-container{
     background: none;

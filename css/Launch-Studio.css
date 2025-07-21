@@ -8,10 +8,11 @@
 /* Header */
 #Launch-Studio-header {
     height: 500px;
-  background: linear-gradient(135deg, #1c9199, #3ab9c2, #69d4ce);
+  /* background: linear-gradient(135deg, #1c9199, #3ab9c2, #69d4ce); */
+
   display: flex;
   align-items: center;
-  color: white;
+  background-color: #e0ecc6;
   justify-content: center;
 
 }
@@ -23,6 +24,11 @@
   align-items: center;
   max-width: 1200px;
   width: 100%;
+    background: url(/images/Launch-Studio-Banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box;
   height: 100%;
   gap: 40px;
 }

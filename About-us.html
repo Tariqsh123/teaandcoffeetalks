@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0"/>
     <meta name="description" content=""/>
 
-    <title>Schedule Demo | Tea & Coffee Talks</title>
+    <title>About Us | Tea & Coffee Talks</title>
 
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/Bootstrap.css">
 <link href="css/style.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/Schedule-demo.css">
+<link rel="stylesheet" href="css/About-us.css">
 
   </head>
   <body>
@@ -52,20 +53,105 @@
 
 
 
-      <div id="schedule-top-main-container">
-   <div id="schedule-top-container">
-    <h1>CONTACT</h1>
-    <h2>Speak With AI Expert!</h2>
-    <p>Work Smarter, Save Time and Costs with AI-Powered Industrial Automation</p>
-    <span>You Can Book a 30 Minutes Slot and Discuss Your Business Requirements!</span>
-   </div>
-   <div id="schedule-calendly-container">
-    <h2>Book A Meeting !</h2>
-    <div class="calendly-inline-widget" id="calendly-widget" data-url="https://calendly.com/thebravenext/30min" style="width:100%;height:700px;"></div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-</div>
+   
+<!-- About Section -->
+ <div id="about-main-container">
+  <div id="about-main-top-header">
+    <div id="about-main-top-inner-header">
+      <span>About Us</span>
+      <h1>Tea and Coffee Talks is home to a thriving global community of active podcasts—where conversations spark inspiration</h1>
+      <p>Your complete podcasting solution to publish, grow, and monetize—all in one place</p>
+    </div>
+  </div>
+  <div id="about-main-bottom-header">
+    <div id="about-main-bottom-inner-header">
+      <h2>The leader in podcast hosting</h2>
+      <p>Over the past decade, Tea and Coffee Talks has evolved into a leading force in podcasting—empowering creators with intuitive tools to record, publish, and share their stories with ease. We make it simple to distribute your content across major platforms like Spotify and Apple Podcasts, so your voice reaches listeners everywhere.</p>
+    </div>
+  </div>
+ </div>
+
+
+
+  <div id="about-after-header-main-container">
+  <div id="about-after-header-main-top-header">
+    <div id="about-after-header-main-top-inner-header">
+      <h2>Making podcast monetization better</h2>
+      <p>Tea and Coffee Talks provides built-in monetization tools to help podcasters earn from their content. Our sponsorship marketplace connects creators with relevant advertisers, while live podcasting features let you engage with your audience in real time—and even receive virtual gifts as listener support.</p>
+    </div>
+  </div>
+  <div id="about-after-header-main-bottom-header">
+  <div id="about-after-header-main-bottom-inner-header">
+    <div class="stats-box">
+      <h2>18</h2>
+      <p>Anniversaries Celebrated</p>
+    </div>
+    <div class="stats-box">
+      <h2>Podcasters</h2>
+      <p>Globally Connected</p>
+    </div>
+    <div class="stats-box">
+      <h2>Episodes</h2>
+      <p>Shared Worldwide</p>
+    </div>
+    <div class="stats-box">
+      <h2>Downloads</h2>
+      <p>As of Today</p>
+    </div>
+  </div>
 </div>
 
+ </div>
+ <script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-in');
+        observer.unobserve(entry.target); // Only animate once
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  document.querySelectorAll('.stats-box').forEach(box => {
+    observer.observe(box);
+  });
+</script>
+
+
+<!-- Learn More About Us Section -->
+
+<div id="learn-more-about-main-container">
+  <div id="learn-more-about-second-main-container">
+    <h2>Learn More About Us</h2>
+  <div id="learn-more-about-card-section">
+  <div class="learn-card">
+    <img src="https://img.icons8.com/?size=100&id=W46IJyiaGbhv&format=png&color=1694a0" alt="Events Icon">
+    <h3>Community Events</h3>
+    <p>Discover exciting podcast genres and connect with creators across the globe through interactive events.</p>
+    <a href="Schedule-demo.html">Explore Events</a>
+  </div>
+
+  <div class="learn-card">
+    <img src="https://img.icons8.com/?size=100&id=u3SkQQuHhIMD&format=png&color=1694a0" alt="Career Icon">
+    <h3>Join Our Team</h3>
+    <p>Shape the future of audio content by exploring rewarding career opportunities at Tea & Coffee Talks.</p>
+    <a href="Schedule-demo.html">Explore Careers</a>
+  </div>
+
+  <div class="learn-card">
+    <img src="https://img.icons8.com/?size=100&id=45782&format=png&color=1694a0" alt="Media Icon">
+    <h3>Press & Media</h3>
+    <p>Stay informed with the latest announcements, podcasting trends, and news from Tea & Coffee Talks.</p>
+    <a href="Schedule-demo.html">View Media Center</a>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<!-- About Section -->
 
 
 
@@ -90,7 +176,7 @@
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="About-us.html">About</a></li>
-          <li><a href="Blogs.html">Blog</a></li>
+          <li><a href="Blogs.html">Blogs</a></li>
           <li><a href="Schedule-demo.html">Schedule Demo</a></li>
           <li><a href="#">Privacy</a></li>
           <li><a href="#">Terms & Condition</a></li>

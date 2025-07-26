@@ -1,0 +1,327 @@
+#about-main-container{
+    height: 800px;
+    width: 100%;
+    background: url('https://pbcdn1.podbean.com/fs1/site/www-v2/images/start/about-us-banner@2x_resize_1x.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    padding-top: 70px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+#about-main-top-header{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+}
+#about-main-top-inner-header{
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+    flex-direction: column;
+    gap: 10px;
+}
+#about-main-top-inner-header span , #about-main-top-inner-header p{
+    color: gray;
+    font-size: medium;
+} 
+#about-main-top-inner-header h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#about-main-bottom-header{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+}
+#about-main-bottom-inner-header{
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    align-items: center;
+}
+#about-main-bottom-inner-header h2{
+    font-size: 40px;
+    width: 50%;
+}
+#about-main-bottom-inner-header p{
+    font-size: medium;
+    color: gray;
+    width: 50%;
+}
+
+@media (max-width: 991px){
+#about-main-top-inner-header h1{
+    font-size: 35px;
+}
+}
+@media (max-width: 768px){
+#about-main-top-inner-header h1{
+    font-size: 30px;
+}
+#about-main-bottom-inner-header{
+    flex-direction: column;
+}
+#about-main-bottom-inner-header h2{
+    width: 100%;
+}
+#about-main-bottom-inner-header p{
+    width: 100%;
+}
+}
+@media (max-width: 600px){
+    #about-main-container{
+    height: 600px;
+}
+    #about-main-top-header{
+    height: 200px;
+}
+#about-main-bottom-header{
+    height: 200px;
+}
+#about-main-top-inner-header h1{
+    font-size: 20px;
+}
+#about-main-top-inner-header span , #about-main-top-inner-header p{
+    font-size: small;
+} 
+#about-main-bottom-inner-header h2{
+    font-size: 20px;
+}
+#about-main-bottom-inner-header p{
+    font-size: small;
+}
+}
+
+
+
+#about-after-header-main-container{
+    height: 800px;
+    width: 100%;
+    background: url('https://pbcdn1.podbean.com/fs1/site/www-v2/images/start/about-us-img@2x_resize_1x.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+#about-after-header-main-top-header{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+}
+#about-after-header-main-top-inner-header{
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    align-items: center;
+}
+#about-after-header-main-top-inner-header h2{
+    font-size: 40px;
+    width: 50%;
+}
+#about-after-header-main-top-inner-header p{
+    font-size: medium;
+    color: gray;
+    width: 50%;
+}
+
+#about-after-header-main-bottom-header {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0px;
+}
+
+#about-after-header-main-bottom-inner-header {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.stats-box {
+  flex: 1 1 200px;
+  min-width: 200px;
+  max-width: 260px;
+  text-align: center;
+  gap: 5px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.stats-box.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.stats-box h2 {
+  font-size: 32px;
+  margin: 0;
+}
+.stats-box p {
+  font-size: 14px;
+  margin: 0;
+  color: gray;
+}
+@media (max-width: 991px) {
+.stats-box {
+    min-width: 150px;
+}
+}
+@media (max-width: 768px) {
+    #about-after-header-main-bottom-header {
+    padding: 20px 0px;
+}
+  #about-after-header-main-bottom-inner-header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px){
+#about-after-header-main-top-inner-header{
+    flex-direction: column;
+}
+#about-after-header-main-top-inner-header h2{
+    width: 100%;
+}
+#about-after-header-main-top-inner-header p{
+    width: 100%;
+}
+}
+@media (max-width: 600px){
+    #about-after-header-main-container {
+    height: 600px;
+}
+#about-after-header-main-top-header {
+    height: 200px;
+}
+#about-after-header-main-top-inner-header h2{
+    font-size: 20px;
+}
+#about-after-header-main-top-inner-header p{
+    font-size: small;
+}
+  #about-after-header-main-bottom-inner-header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Learn More About Section */
+#learn-more-about-main-container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    align-items: center;
+}
+#learn-more-about-second-main-container{
+    height: fit-content;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#learn-more-about-second-main-container h2{
+    margin: 0;
+    padding: 10px 0;
+    color: #1694a0;
+    font-size: 40px;
+    text-align: center;
+}
+#learn-more-about-card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.learn-card {
+    height: 250px;
+    width: 300px;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+  box-shadow: 1px 1px 5px gray;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.learn-card:hover{
+    box-shadow: 1px 1px 5px gainsboro;
+}
+.learn-card img {
+  height: 50px;
+  width: auto;
+  margin-bottom: 15px;
+}
+
+.learn-card h3 {
+  font-size: 22px;
+  text-align: center;
+  color: #1694a0;
+  margin: 0;
+}
+
+.learn-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  text-align: center;
+
+}
+
+.learn-card a {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s ease;
+}
+
+.learn-card a:hover {
+  border-bottom: 1px solid #1694a0;
+}
